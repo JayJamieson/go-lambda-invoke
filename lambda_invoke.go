@@ -11,7 +11,7 @@ import (
 )
 
 // DefaultAlias is the alias for function invocations.
-const DefaultAlias = "current"
+const DefaultAlias = "$LATEST"
 
 type LambdaClient interface {
 	Invoke(ctx context.Context, params *lambda.InvokeInput, optFns ...func(*lambda.Options)) (*lambda.InvokeOutput, error)
